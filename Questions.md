@@ -1,10 +1,49 @@
----
-title: Questions
-author: Ishank Nijhawan
+<!DOCTYPE html>
+<html>
 
----
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questions</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
 
-<h1 id="questions">Questions</h1>
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#questions">Questions</a>
+<ul>
+<li><a href="#ques1.-how-video-streaming-from-url-works.-what-is-hls-">Ques1. How video streaming from URL works. What is HLS ?</a></li>
+<li><a href="#ques2.-how-is-video-played-in-android-app-">Ques2. How is video played in Android app ?</a></li>
+<li><a href="#ques3.-how-youtube-changes-video-quality-based-upon-internet-connection">Ques3. How Youtube changes video quality based upon internet connection</a></li>
+<li><a href="#ques4.-how-does-firebase-database-works">Ques4. How does Firebase database works</a></li>
+<li><a href="#ques5.-how-sensex-api-works">Ques5. How sensex API works</a></li>
+<li><a href="#ques6.--explain-whatsapp-system-design">Ques6.  Explain whatsapp system design</a></li>
+<li><a href="#ques7.-how-whatsapp-compresses-images">Ques7. How whatsapp compresses images</a></li>
+<li><a href="#ques8.-what-is-deeplink-">Ques8. What is deeplink ?</a></li>
+<li><a href="#ques9.-difference-between-web-sockets-long-polling-and-server-side-events-sse.">Ques9. Difference between web sockets, long polling and Server Side Events (SSE).</a></li>
+<li><a href="#ques-10.-difference-between-mainui-thread-and-background-thread.">Ques 10. Difference between Main/UI Thread and background Thread.</a></li>
+<li><a href="#ques-11.-how-does-pip-picture-in-picture-works-in-android-applications-">Ques 11. How does PIP (picture in picture) works in android applications ?</a></li>
+<li><a href="#ques-12.-briefly-explain-the-following-terms-in-android">Ques 12. Briefly explain the following terms in android</a></li>
+<li><a href="#ques-13.-what-dynamic-programming.-explain-how-software-like-auto-spell-checker-and-google-maps-make-us-of-this.">Ques 13. What Dynamic programming. Explain how software like auto spell checker and google maps make us of this.</a></li>
+<li><a href="#ques-14.-explain-trie-data-structure.">Ques 14. Explain Trie data structure.</a></li>
+<li><a href="#ques-15.-what-is-graph-ql-">Ques 15. What is Graph QL ?</a></li>
+<li><a href="#ques-16.-what-is-conversational-ai-and-how-it-works.-explain-amazon-alexa.">Ques 16. What is conversational AI and how it works. Explain Amazon Alexa.</a></li>
+<li><a href="#ques-17.-what-is-block-chain--why-so-fuss-around-it-">Ques 17. What is block chain ? why so fuss around it ?</a></li>
+<li><a href="#ques-18.-what-is-5g-iot-and-why-it-is-important-to-know-about-it-">Ques 18. What is 5G, IOT and why it is important to know about it ?</a></li>
+<li><a href="#ques-19.-what-is-system-design-why-it-is-required-">Ques 19. What is System Design, why it is required ?</a></li>
+<li><a href="#ques-20.-what-is-caching-">Ques 20. What is Caching ?</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="questions">Questions</h1>
 <p><em>repository URL: <a href="https://github.com/ishanknijhawan/Questions.git">https://github.com/ishanknijhawan/Questions.git</a></em><br>
 <em>gist ID: 4771e2b719d987ecc7f512a904fa8445</em></p>
 <h2 id="ques1.-how-video-streaming-from-url-works.-what-is-hls-">Ques1. How video streaming from URL works. What is HLS ?</h2>
@@ -398,3 +437,8 @@ A system design approach is required to run a system/software in an efficient an
 <p>Answer: Caching is the process of storing copies of files in a cache, or temporary storage location, so that they can be accessed more quickly. Technically, a cache is any temporary storage location for copies of files or data, but usually the term is used in reference to Internet technologies. In context of an Android app, caching is really useful and it prevents the data being fetched from server every time user opens that particular activity or fragment. Some of the popular libraries for caching data is Room for data persistence and Glide for image caching.</p>
 <p>One more example in context of Web technologies is CDN Caching. A CDN, or content delivery network, caches content (such as images, videos, or webpages) in proxy servers that are located closer to end users than origin servers. Because the servers are closer to the user making the request, a CDN is able to deliver content more quickly. Think of a CDN as being like a chain of grocery stores: Instead of going all the way to the farms where food is grown, which could be hundreds of miles away, shoppers go to their local grocery store, which still requires some travel but is much closer. Because grocery stores stock food from faraway farms, grocery shopping takes minutes instead of days. Similarly, CDN caches ‘stock’ the content that appears on the Internet so that webpages load much more quickly.</p>
 
+    </div>
+  </div>
+</body>
+
+</html>
