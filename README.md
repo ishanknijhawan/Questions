@@ -1,41 +1,10 @@
-<!DOCTYPE html>
-<html>
+---
+title: Questions
+author: Ishank Nijhawan
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Questions</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
+---
 
-<body class="stackedit">
-  <div class="stackedit__left">
-    <div class="stackedit__toc">
-      
-<ul>
-<li><a href="#questions">Questions</a>
-<ul>
-<li><a href="#ques1.-how-video-streaming-from-url-works.-what-is-hls-">Ques1. How video streaming from URL works. What is HLS ?</a></li>
-<li><a href="#ques2.-how-is-video-played-in-android-app-">Ques2. How is video played in Android app ?</a></li>
-<li><a href="#ques3.-how-youtube-changes-video-quality-based-upon-internet-connection">Ques3. How Youtube changes video quality based upon internet connection</a></li>
-<li><a href="#ques4.-how-does-firebase-database-works">Ques4. How does Firebase database works</a></li>
-<li><a href="#ques5.-how-sensex-api-works">Ques5. How sensex API works</a></li>
-<li><a href="#ques6.--explain-whatsapp-system-design">Ques6.  Explain whatsapp system design</a></li>
-<li><a href="#ques7.-how-whatsapp-compresses-images">Ques7. How whatsapp compresses images</a></li>
-<li><a href="#ques8.-what-is-deeplink-">Ques8. What is deeplink ?</a></li>
-<li><a href="#ques9.-difference-between-web-sockets-long-polling-and-server-side-events-sse.">Ques9. Difference between web sockets, long polling and Server Side Events (SSE).</a></li>
-<li><a href="#ques-10.-difference-between-mainui-thread-and-background-thread.">Ques 10. Difference between Main/UI Thread and background Thread.</a></li>
-<li><a href="#ques-11.-how-does-pip-picture-in-picture-works-in-android-applications-">Ques 11. How does PIP (picture in picture) works in android applications ?</a></li>
-<li><a href="#ques-12.-briefly-explain-the-following-terms-in-android">Ques 12. Briefly explain the following terms in android</a></li>
-</ul>
-</li>
-</ul>
-
-    </div>
-  </div>
-  <div class="stackedit__right">
-    <div class="stackedit__html">
-      <h1 id="questions">Questions</h1>
+<h1 id="questions">Questions</h1>
 <p><em>repository URL: <a href="https://github.com/ishanknijhawan/Questions.git">https://github.com/ishanknijhawan/Questions.git</a></em><br>
 <em>gist ID: 4771e2b719d987ecc7f512a904fa8445</em></p>
 <h2 id="ques1.-how-video-streaming-from-url-works.-what-is-hls-">Ques1. How video streaming from URL works. What is HLS ?</h2>
@@ -357,9 +326,44 @@ Floating point is about 2 times slower than integer on Android devices. In speed
 <h3 id="api">18. API</h3>
 <p><strong>A</strong>pplication <strong>P</strong>rogramming <strong>I</strong>nterface, or API in short, is a software intermediary that allows two applications to talk to each other. When you use an application on your mobile phone, the application connects to the Internet and sends data to a server. The server then retrieves that data, interprets it, performs the necessary actions and sends it back to your phone. The application then interprets that data and presents you with the information you wanted in a readable way. This is what an API is - all of this happens via API.</p>
 <p>The API also provides a level of security, your smartphone’s data is never fully exposed to the server, and likewise the server is never fully exposed to your phone. Instead, each communicates with small packets of data, sharing only that which is necessary. An API usually contains data in the form of a JSON and it is converted by tools such as GSON to make is usable for the software. An example API can be <a href="https://api.covid19india.org/data.json">Covid 19 India API</a></p>
+<h2 id="ques-13.-what-dynamic-programming.-explain-how-software-like-auto-spell-checker-and-google-maps-make-us-of-this.">Ques 13. What Dynamic programming. Explain how software like auto spell checker and google maps make us of this.</h2>
+<p>Answer: Dynamic programming (DP in short) is an algorithmic technique for solving an optimization problem by breaking down into simpler sub problems and taking advantage of the fact that solution to overall problem depends upon the optimal solution of its sub problems.<br>
+In DP, we  store the sub solutions in a matrix which come in handy when computing the solutions of problems which come further after in the recursive procedure. A very good example of this Fibonacci series in which nth Fibonacci number can be computed using concept of Dynamic programming. When using plain old recursive procedure in calculating nth Fibonacci number, it recomputes multiple values in the tree which are already computed. So, instead of going down the trees for computing the values which are already computed, we can store them in a matrix and check on runtime before computing a value that whether this value is already being computed or not. Doing this, we are reducing the time complexity to a significant amount.<br>
+Dynamic programming has many other applications, two of the very important applications have been discussed below:</p>
+<ul>
+<li>
+<h3 id="spell-checker">Spell Checker:</h3>
+</li>
+</ul>
+<p>Spell checkers make suggestions for misspelled words. Given a misspelled string, a spell checker return the words in the dictionary which are closest to the misspelled string. The main concept behind them is what we call as a <strong>Levenshtein distance</strong> or Edit distance. It follows similar approach to a dynamic programming, stores all the cost required for insertion, deletion and substitution for each letter with every other letter between two words. And based on that distance, it recommends the words which are nearest to input word. For example, while typing in a smartphone keyboard, we often see suggestion before we even type the whole word. We also see corrected spelling for any given word in out text input.</p>
+<ul>
+<li>
+<h3 id="google-maps">Google Maps</h3>
+</li>
+</ul>
+<p>Google maps approach to dynamic programming is pretty smart. My guess would that it stores be all the path values (distances between two paths) and the real time traffic values as a solution of the sub problem and whenever the user  wants to know the shortest distance, it has all the values pre loaded. And based upon the real time traffic it tells which path the user should follow.</p>
+<h2 id="ques-14.-explain-trie-data-structure.">Ques 14. Explain Trie data structure.</h2>
+<p>Answer: Trie (also known as digital tree or prefix tree), is an ordered tree data structure which is used to store dynamic set of arrays where the keys are usually strings. Simply saying, a Trie is a tree like data structure wherein each node stores a character and we can search, insert or delete the strings by traversing in that Trie. This improves the time complexity of a string search operation drastically. Because we store the strings in a tree like dictionary and ignore the repeated ones. For example, there are two strings <em>pqrs</em> and <em>pqrt</em>. Then instead of storing these 2 separate strings in an arraylist or or 2D array, we can store these in a Trie as follows.</p>
+<ul>
+<li>Store p as the root element. Check if q exists, if yes then don’t add. If no then insert this character as the child of p. Similarly check r and s. So we now have a tree with nodes p, q, r and s with q being child of p, r being child of q and s being child of r.</li>
+<li>Now, for the second string, we check if p already exists. In this case, yes it is the root of this element, so we move to next element q, which is also present in the string pqrt. We check for r, it’s present as well, and at last we check for t, which is not present. So we make t as a child of r and sibling of s. This way, we stored a total of 5 characters in the tree by ignoring the repeated characters.</li>
+<li>But, what if the first character is different in a string, well in that case we redesign out Trie DS. We set an empty character as our root node and all the nodes which were previously the root nodes are now the child of this empty character root node.</li>
+</ul>
+<p><img src="https://miro.medium.com/max/1000/1*-KWorUiWCwn-a5iGw2chZg.jpeg" alt="enter image description here"></p>
+<p>For more details, refer to <a href="https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014">this</a> article.</p>
+<h2 id="ques-15.-what-is-graph-ql-">Ques 15. What is Graph QL ?</h2>
+<p>Answer: GraphQL is a syntax which is generally used to load data from a server to a client. With <strong>GraphQL</strong>, the user is able to make a single call to fetch the required information rather than to construct several REST requests to fetch the same. GraphQL is usually a string query that is sent to server to be implemented. That query when called, returns a JSON format to the client. When compared with the <strong>REST</strong>, it is much more flexible and solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs.<br>
+Instead of making multiple requests for multiple endpoints like in REST API, user can simply write one single query describing all the needs and requirements. Let’s consider a simple example scenario: In a blogging application, an app needs to display the titles of the posts of a specific user. The same screen also displays the names of the last 3 followers of that user. How would that situation be solved with REST and GraphQL?</p>
+<h3 id="using-rest">Using REST</h3>
+<p>With a REST API, you would typically gather the data by accessing multiple endpoints. In the example, these could be <code>/users/&lt;id&gt;</code> endpoint to fetch the initial user data. Secondly, there’s likely to be a <code>/users/&lt;id&gt;/posts</code> endpoint that returns all the posts for a user. The third endpoint will then be the <code>/users/&lt;id&gt;/followers</code> that returns a list of followers per user.</p>
+<p><img src="https://imgur.com/VRyV7Jh.png" alt="enter image description here"></p>
+<h3 id="using-graph-ql">Using Graph QL</h3>
+<p>In GraphQL on the other hand, you’d simply send a single query to the GraphQL server that includes the concrete data requirements. The server then responds with a JSON object where these requirements are fulfilled.</p>
+<p><img src="https://imgur.com/z9VKnHs.png" alt="enter image description here"></p>
+<h2 id="ques-16.-what-is-conversational-ai-and-how-it-works.-explain-amazon-alexa.">Ques 16. What is conversational AI and how it works. Explain Amazon Alexa.</h2>
+<p>Answer:</p>
+<h2 id="ques-17.-what-is-block-chain--why-so-fuss-around-it-">Ques 17. What is block chain ? why so fuss around it ?</h2>
+<h2 id="ques-18.-what-is-5g-iot-and-why-it-is-important-to-know-about-it-">Ques 18. What is 5G, IOT and why it is important to know about it ?</h2>
+<h2 id="ques-19.-what-is-system-design-why-it-is-required-">Ques 19. What is System Design, why it is required ?</h2>
+<h2 id="ques-20.-what-is-caching-">Ques 20. What is Caching ?</h2>
 
-    </div>
-  </div>
-</body>
-
-</html>
